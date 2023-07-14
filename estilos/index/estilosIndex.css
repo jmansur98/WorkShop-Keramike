@@ -30,7 +30,9 @@ header {
   display: inline-block;
 
 }
-
+.dropdown-toggle::after {
+  display: none
+}
 .contentList a {
   text-decoration: none;
   color: #333;
@@ -379,4 +381,43 @@ h1{
   margin-left: 250px;
   border: 3px solid #41738e;
   border-radius: 10px;
+}
+.dropdown{
+  display: none;
+}
+@media (max-width: 768px) {
+  .contentList{
+    display: none;
+
+  }
+  .dropdown{
+    display: block;
+
+}
+.dropdown button{
+  background: transparent ;
+  border: none;
+  color: #000000;
+}
+.contentTodo{
+  display: block;
+  padding: 20px;
+}
+.contentboxUno, .contentboxDos{
+  margin-bottom:10px ;
+}
+.contentRight{
+  display: block;
+  padding: 10px;
+}
+.textContainerUno{
+  margin: auto;
+}
+.contentLeft{
+  display: block;
+  padding: 10px;
+}
+.textContainerTres{
+  margin: 10px auto;
+}
 }
