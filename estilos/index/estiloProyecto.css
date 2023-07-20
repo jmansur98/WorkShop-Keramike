@@ -1,0 +1,329 @@
+@charset "UTF-8";
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el menú del encabezado */
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #e6dad4;
+}
+header .logoKeramikeUno {
+  position: relative;
+  right: 420px;
+  height: 140px;
+}
+header .contentList {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+}
+header .contentList li {
+  margin-right: 100px;
+  display: inline-block;
+}
+header .dropdown-toggle::after {
+  display: none;
+}
+header a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+header .contentInicio {
+  transition: transform 0.5s ease-in-out;
+}
+header .contentInicio:hover {
+  transform: scale(1.5);
+}
+header .contentNosotros {
+  transition: transform 0.5s ease-in-out;
+}
+header .contentNosotros:hover {
+  transform: scale(1.5);
+}
+header .contentContacto {
+  transition: transform 0.5s ease-in-out;
+}
+header .contentContacto:hover {
+  transform: scale(1.5);
+}
+header .contentImgIconos {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+/* Estilos de secciones principales */
+main {
+  padding: 0px;
+  text-align: center;
+  /* Estilos de cada cuadro de contenido */
+}
+main h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  letter-spacing: 4.4px;
+  word-spacing: 1.2px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+  margin-top: 10px;
+  text-shadow: -3px 5px 3px rgba(0, 0, 0, 0.2);
+}
+main .carousel-inner {
+  margin-top: 20px;
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition-duration: 3s;
+}
+main .contentTodo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+main .contentboxUno, main .contentboxDos, main .contentboxTres {
+  flex-basis: 30%;
+  padding: 20px;
+  background-color: #41738e;
+  border-radius: 15px;
+}
+main .contentboxUno:hover, main .contentboxDos:hover, main .contentboxTres:hover {
+  animation: vibrate 0.3s infinite;
+}
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Estilos de la sección "Taller" */
+.contentRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.contentRight .textContainerUno {
+  margin-right: 160px;
+  margin-bottom: 120px;
+  margin-left: 100px;
+  opacity: 10;
+  text-align: center;
+  border: 3px solid #3380aa;
+  border-radius: 15px;
+}
+.contentRight .tittleTaller {
+  font-size: 24px;
+}
+.contentRight .imgTaller {
+  width: 600px;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+/* Estilos para el contenedor principal */
+.contentLeft {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Estilos para el contenedor de textContainerDos */
+.textContainerDos {
+  flex: 2;
+  border: 3px solid #3380aa;
+  border-radius: 15px;
+}
+
+/* Estilos para el contenedor de textContainerTres */
+.textContainerTres {
+  flex: 2;
+  margin-top: 220px;
+  margin-right: 160px;
+  border: 3px solid #3380aa;
+  border-radius: 15px;
+}
+
+/* Estilos para la imagen de los pinceles */
+.imgPincel {
+  width: 600px;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+/* Estilos de texto de pie de página */
+.contentEnd {
+  text-align: center;
+  background-color: #c49192;
+  padding: 20px;
+  margin-top: 25px;
+}
+
+/* Estilos de secciones principales NOSOTROS */
+.content__total {
+  padding: 20px;
+  margin-right: 600px;
+}
+.content__total .contentTittleNos {
+  margin-left: 45px;
+  margin-bottom: 15px;
+}
+.content__total .contentFotoNosotros {
+  border-radius: 10px;
+}
+.content__total .contentTextNosotros {
+  width: 300px;
+  border: 3px solid #3380aa;
+  border-radius: 15px;
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.content__total .contentFotoFrasco {
+  position: absolute;
+  bottom: 130px;
+  top: 140px;
+  right: 0;
+}
+.content__total .contentFotoFrasco img {
+  height: 200%;
+  width: 100%;
+}
+
+/* Estilos de secciones principales CONTACTO */
+.contentPartUno__contacto {
+  text-align: center;
+  padding: 20px;
+  background-color: #c49192;
+}
+.contentPartUno__contacto .titulo__contactoUno {
+  font-size: 24px;
+  color: #030303;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.contentPartUno__contacto .textUno__contacto {
+  font-size: 16px;
+  /* Tamaño de fuente del texto */
+  color: #0e0d0d;
+  /* Color del texto */
+}
+.contentPartUno__contacto .ubicacionTituloDos__contacto {
+  text-align: center;
+  padding: 20px;
+  background-color: #c2b4b4;
+  /* Color de fondo */
+  margin-top: 20px;
+}
+.contentPartUno__contacto .contactRow {
+  display: flex;
+}
+
+.contentEnd {
+  text-align: center;
+  background-color: #c49192;
+  padding: 20px;
+  margin-top: 25px;
+}
+
+.contentForm {
+  display: grid;
+  width: 300px;
+  margin: auto;
+  gap: 30px;
+}
+
+.contentTerminos {
+  display: flex;
+  gap: 10px;
+}
+
+.contentMasInfo {
+  text-align: center;
+}
+
+.contentGoogleMaps {
+  margin-top: 15px;
+  margin-left: 380px;
+  margin-right: 10px;
+  height: 400px;
+}
+
+.contentHorario {
+  margin-top: 100px;
+  margin-left: 250px;
+  border: 3px solid #41738e;
+  border-radius: 10px;
+}
+
+.contentDireccion {
+  margin-top: 100px;
+  margin-left: 250px;
+  border: 3px solid #41738e;
+  border-radius: 10px;
+}
+
+.dropdown {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .contentList {
+    display: none;
+  }
+  .dropdown {
+    display: block;
+  }
+  .dropdown button {
+    background: transparent;
+    border: none;
+    color: #000000;
+  }
+  .contentTodo {
+    display: block;
+    padding: 20px;
+  }
+  .contentboxUno, .contentboxDos {
+    margin-bottom: 10px;
+  }
+  .contentRight {
+    display: block;
+    padding: 10px;
+  }
+  .textContainerUno {
+    margin: auto;
+  }
+  .contentLeft {
+    display: block;
+    padding: 10px;
+  }
+  .textContainerTres {
+    margin: 10px auto;
+  }
+}/*# sourceMappingURL=estiloProyecto.css.map */
