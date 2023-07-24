@@ -12,48 +12,60 @@ header {
   align-items: center;
   background-color: #e6dad4;
 }
+
 header .logoKeramikeUno {
   position: relative;
   right: 420px;
   height: 140px;
 }
+
 header .contentList {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 20px;
 }
+
 header .contentList li {
   margin-right: 100px;
   display: inline-block;
 }
+
 header .dropdown-toggle::after {
   display: none;
 }
+
 header a {
   text-decoration: none;
   color: #333;
   font-size: 20px;
   font-weight: bold;
 }
+
 header .contentInicio {
   transition: transform 0.5s ease-in-out;
 }
+
 header .contentInicio:hover {
   transform: scale(1.5);
 }
+
 header .contentNosotros {
   transition: transform 0.5s ease-in-out;
 }
+
 header .contentNosotros:hover {
   transform: scale(1.5);
 }
+
 header .contentContacto {
   transition: transform 0.5s ease-in-out;
 }
+
 header .contentContacto:hover {
   transform: scale(1.5);
 }
+
 header .contentImgIconos {
   display: flex;
   align-items: center;
@@ -67,6 +79,7 @@ main {
   text-align: center;
   /* Estilos de cada cuadro de contenido */
 }
+
 main h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
@@ -81,28 +94,33 @@ main h1 {
   margin-top: 10px;
   text-shadow: -3px 5px 3px rgba(0, 0, 0, 0.2);
 }
+
 main .carousel-inner {
   margin-top: 20px;
   width: 100%;
   height: 500px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition-duration: 3s;
 }
+
 main .contentTodo {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
+
 main .contentboxUno, main .contentboxDos, main .contentboxTres {
   flex-basis: 30%;
   padding: 20px;
   background-color: #41738e;
   border-radius: 15px;
 }
+
 main .contentboxUno:hover, main .contentboxDos:hover, main .contentboxTres:hover {
   animation: vibrate 0.3s infinite;
 }
+
 @keyframes vibrate {
   0% {
     transform: translateX(0);
@@ -120,13 +138,13 @@ main .contentboxUno:hover, main .contentboxDos:hover, main .contentboxTres:hover
     transform: translateX(0);
   }
 }
-
 /* Estilos de la sección "Taller" */
 .contentRight {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+
 .contentRight .textContainerUno {
   margin-right: 160px;
   margin-bottom: 120px;
@@ -136,9 +154,11 @@ main .contentboxUno:hover, main .contentboxDos:hover, main .contentboxTres:hover
   border: 3px solid #3380aa;
   border-radius: 15px;
 }
+
 .contentRight .tittleTaller {
   font-size: 24px;
 }
+
 .contentRight .imgTaller {
   width: 600px;
   margin-top: 10px;
@@ -190,13 +210,16 @@ main .contentboxUno:hover, main .contentboxDos:hover, main .contentboxTres:hover
   padding: 20px;
   margin-right: 600px;
 }
+
 .content__total .contentTittleNos {
   margin-left: 45px;
   margin-bottom: 15px;
 }
+
 .content__total .contentFotoNosotros {
   border-radius: 10px;
 }
+
 .content__total .contentTextNosotros {
   width: 300px;
   border: 3px solid #3380aa;
@@ -205,12 +228,14 @@ main .contentboxUno:hover, main .contentboxDos:hover, main .contentboxTres:hover
   margin-top: 50px;
   margin-bottom: 20px;
 }
+
 .content__total .contentFotoFrasco {
   position: absolute;
   bottom: 130px;
   top: 140px;
   right: 0;
 }
+
 .content__total .contentFotoFrasco img {
   height: 200%;
   width: 100%;
@@ -222,18 +247,21 @@ main .contentboxUno:hover, main .contentboxDos:hover, main .contentboxTres:hover
   padding: 20px;
   background-color: #c49192;
 }
+
 .contentPartUno__contacto .titulo__contactoUno {
   font-size: 24px;
   color: #030303;
   margin-top: 20px;
   margin-bottom: 30px;
 }
+
 .contentPartUno__contacto .textUno__contacto {
   font-size: 16px;
   /* Tamaño de fuente del texto */
   color: #0e0d0d;
   /* Color del texto */
 }
+
 .contentPartUno__contacto .ubicacionTituloDos__contacto {
   text-align: center;
   padding: 20px;
@@ -241,6 +269,7 @@ main .contentboxUno:hover, main .contentboxDos:hover, main .contentboxTres:hover
   /* Color de fondo */
   margin-top: 20px;
 }
+
 .contentPartUno__contacto .contactRow {
   display: flex;
 }
@@ -326,4 +355,6 @@ main .contentboxUno:hover, main .contentboxDos:hover, main .contentboxTres:hover
   .textContainerTres {
     margin: 10px auto;
   }
-}/*# sourceMappingURL=estiloProyecto.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
