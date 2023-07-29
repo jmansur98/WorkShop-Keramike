@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(230, 218, 212, 0.3);
+  
+    .logoKeramikeUno {
+      position: relative;
+      right: 420px;
+      height: 140px;
+    }
+  
+    .contentList {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 20px;
+  
+      li {
+        margin-right: 100px;
+        display: inline-block;
+  
+        a {
+          text-decoration: none;
+          color: #0c0b0b;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  

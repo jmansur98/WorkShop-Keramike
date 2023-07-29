@@ -1,0 +1,23 @@
+.contentInicio {
+    transition: transform 0.5s ease-in-out;
+  }
+
+header .contentInicio:hover {
+  transform: scale(1.5);
+}
+
+header .contentNosotros {
+  transition: transform 0.5s ease-in-out;
+}
+
+header .contentNosotros:hover {
+  transform: scale(1.5);
+}
+
+header .contentContacto {
+  transition: transform 0.5s ease-in-out;
+}
+
+header .contentContacto:hover {
+  transform: scale(1.5);
+}

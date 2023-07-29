@@ -1,179 +1,25 @@
-@charset "UTF-8";
 
-* {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+ @import"reset";
+@import"nav";
+@import"imgNav";
+@import"mainNav";
+@import"carruselMain";
+@import"cajasBlue";
 
-/* Estilos para el menú del encabezado */
-
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: rgb(230, 218, 212, 0.3);
-
-  .logoKeramikeUno {
-    position: relative;
-    right: 420px;
-    height: 140px;
-  }
-
-  .contentList {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 20px;
-
-    li {
-      margin-right: 100px;
-      display: inline-block;
-
-      a {
-        text-decoration: none;
-        color: #0c0b0b;
-        font-size: 20px;
-        font-weight: bold;
-      }
-    }
-  }
-
-  .contentImgIconos {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-    margin-right: 10px;
-  }
-
-  .fb {
-    width: 30px;
-    margin: 20px;
-  }
-
-  .ig {
-    width: 30px;
-  }
-
-  .contentInicio {
-    transition: transform 0.5s ease-in-out;
-  }
-}
-
-header .contentInicio:hover {
-  transform: scale(1.5);
-}
-
-header .contentNosotros {
-  transition: transform 0.5s ease-in-out;
-}
-
-header .contentNosotros:hover {
-  transform: scale(1.5);
-}
-
-header .contentContacto {
-  transition: transform 0.5s ease-in-out;
-}
-
-header .contentContacto:hover {
-  transform: scale(1.5);
-}
-
-
-/* Estilos de secciones principales MENU*/
-main {
-  padding: 0px;
-  text-align: center;
-
-  h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    letter-spacing: 4.4px;
-    word-spacing: 1.2px;
-    color: #000000;
-    font-weight: 700;
-    text-decoration: none;
-    font-style: normal;
-    font-variant: normal;
-    text-transform: uppercase;
-    margin-top: 10px;
-    text-shadow: -3px 5px 3px rgba(0, 0, 0, 0.2);
-  }
-
-  .carousel-inner {
-    margin-top: 20px;
-    width: 100%;
-    height: 500px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    transition-duration: 3s;
-  }
-
-  .contentTodo {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-
-  .contentboxUno,
-  .contentboxDos,
-  .contentboxTres {
-    flex-basis: 30%;
-    padding: 25px;
-    background-color: rgb(65, 115, 142, 0.5);
-    border-radius: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
-
-.contentboxUno:hover,
-.contentboxDos:hover,
-.contentboxTres:hover {
-  animation: vibrate 0.3s infinite;
-}
-
-@keyframes vibrate {
-  0% {
-    transform: translateX(0);
-  }
-
-  25% {
-    transform: translateX(5px);
-  }
-
-  50% {
-    transform: translateX(0);
-  }
-
-  75% {
-    transform: translateX(5px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
 
 /* Estilos de la sección "Taller" */
-.contentRight {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
 
   .textContainerUno {
-    margin-right: 160px;
+    width: 500px;
     margin-bottom: 120px;
-    margin-left: 100px;
-    opacity: 10;
+    margin-top: 20px;
     text-align: center;
     border: 3px solid #3380aa;
     border-radius: 15px;
   }
 
   .tittleTaller {
-    font-size: 24px;
+    font-size: 30px;
   }
 
   .imgTaller {
@@ -181,7 +27,7 @@ main {
     margin-top: 10px;
     border-radius: 15px;
   }
-}
+
 
 /* Estilos para el contenedor principal */
 .contentLeft {
@@ -326,10 +172,9 @@ main {
     justify-content: flex-end;
   }
 
-  .logoKeramikeUno {
-    left: -70px;
-  }
-
+.logoKeramikeUno{
+margin-right: 65px;
+}
   .contentListDeso {
     display: none;
   }
@@ -356,27 +201,7 @@ main {
  }
   }
 
-  .contentTodo {
-    display: block;
-    padding: 20px;
-  }
-
-  .contentboxUno,
-  .contentboxDos, .contentboxTres {
-    margin-bottom: 10px;
-    color: rgb(14, 13, 13);
-
-  }
-
-  .contentRight {
-    display: block;
-    padding: 10px;
-  }
-
-  .contentLeft {
-    display: block;
-    padding: 10px;
-  }
+ 
 
   .textContainerTres {
     margin: 10px auto;

@@ -5,7 +5,6 @@
   padding: 0;
 }
 
-/* Estilos para el menú del encabezado */
 header {
   display: flex;
   justify-content: flex-end;
@@ -33,20 +32,24 @@ header .contentList li a {
   font-size: 20px;
   font-weight: bold;
 }
-header .contentImgIconos {
+
+.contentImgIconos {
   display: flex;
   align-items: center;
   margin-left: 20px;
   margin-right: 10px;
 }
-header .fb {
+
+.fb {
   width: 30px;
   margin: 20px;
 }
-header .ig {
+
+.ig {
   width: 30px;
 }
-header .contentInicio {
+
+.contentInicio {
   transition: transform 0.5s ease-in-out;
 }
 
@@ -70,7 +73,6 @@ header .contentContacto:hover {
   transform: scale(1.5);
 }
 
-/* Estilos de secciones principales MENU*/
 main {
   padding: 0px;
   text-align: center;
@@ -83,9 +85,6 @@ main h1 {
   color: #000000;
   font-weight: 700;
   text-decoration: none;
-  font-style: normal;
-  font-variant: normal;
-  text-transform: uppercase;
   margin-top: 10px;
   text-shadow: -3px 5px 3px rgba(0, 0, 0, 0.2);
 }
@@ -97,14 +96,16 @@ main .carousel-inner {
   object-fit: cover;
   transition-duration: 3s;
 }
-main .contentTodo {
+
+.contentTodo {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
-main .contentboxUno,
-main .contentboxDos,
-main .contentboxTres {
+
+.contentboxUno,
+.contentboxDos,
+.contentboxTres {
   flex-basis: 30%;
   padding: 25px;
   background-color: rgba(65, 115, 142, 0.5);
@@ -137,24 +138,20 @@ main .contentboxTres {
   }
 }
 /* Estilos de la sección "Taller" */
-.contentRight {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.contentRight .textContainerUno {
-  margin-right: 160px;
+.textContainerUno {
+  width: 500px;
   margin-bottom: 120px;
-  margin-left: 100px;
-  opacity: 10;
+  margin-top: 20px;
   text-align: center;
   border: 3px solid #3380aa;
   border-radius: 15px;
 }
-.contentRight .tittleTaller {
-  font-size: 24px;
+
+.tittleTaller {
+  font-size: 30px;
 }
-.contentRight .imgTaller {
+
+.imgTaller {
   width: 600px;
   margin-top: 10px;
   border-radius: 15px;
@@ -288,7 +285,7 @@ main .contentboxTres {
     justify-content: flex-end;
   }
   .logoKeramikeUno {
-    left: -70px;
+    margin-right: 65px;
   }
   .contentListDeso {
     display: none;
@@ -313,27 +310,6 @@ main .contentboxTres {
     display: none;
   }
 }
-.contentTodo {
-  display: block;
-  padding: 20px;
-}
-
-.contentboxUno,
-.contentboxDos, .contentboxTres {
-  margin-bottom: 10px;
-  color: rgb(14, 13, 13);
-}
-
-.contentRight {
-  display: block;
-  padding: 10px;
-}
-
-.contentLeft {
-  display: block;
-  padding: 10px;
-}
-
 .textContainerTres {
   margin: 10px auto;
 }
