@@ -1,0 +1,28 @@
+/* Estilos para el contenedor "NOVEDADES" */
+.contentLeft {
+    margin-top: 40px;
+  
+    .textContainerDos {
+      border: 3px solid #3380aa;
+      border-radius: 15px;
+      width: 700px;
+      padding: 30px;
+      margin: auto;
+    }
+  
+    .textContainerTres {
+      border: 3px solid #3380aa;      
+      border-radius: 15px;
+      width: 500px;
+      padding: 30px;
+      margin-top: 250px;
+      margin-bottom: 100px;
+      margin-left: 750px;
+    }
+  }
+  .imgPincel {
+    width: 600px;
+    margin-top: -30%;
+    margin-right: 52%;
+    border-radius: 15px; 
+  }

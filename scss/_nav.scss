@@ -1,32 +1,54 @@
 header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 150px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(6deg, rgba(255, 255, 255, 1) 48%, rgba(230, 218, 212, 1) 100%);
+
+.dropdown{
+  display: none;
+}
+  .logoKeramikeUno {
+    position: absolute;
+    left: 10px; 
+    top: 10px;
+    height: 140px;
+  }
+
+  .contentList {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: rgba(230, 218, 212, 0.3);
-  
-    .logoKeramikeUno {
-      position: relative;
-      right: 420px;
-      height: 140px;
-    }
-  
-    .contentList {
-      display: flex;
-      list-style: none;
-      padding: 0;
-      margin: 20px;
-  
-      li {
-        margin-right: 100px;
-        display: inline-block;
-  
-        a {
-          text-decoration: none;
-          color: #0c0b0b;
-          font-size: 20px;
-          font-weight: bold;
-        }
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+
+    li {
+      margin-right: 100px;
+      display: inline-block;
+
+      a {
+        text-decoration: none;
+        color: #0c0b0b;
+        font-size: 20px;
+        font-weight: bold;
       }
     }
   }
+ 
+@media (max-width: 768px) {
+    .dropdown {
+      display: block;
+    }
+
+    .dropdown-toggle::after {
+      display: none;    
+    }
+
+    .dropdown button {
+      border: none;
+      margin-right: 20px;
+    }  
+  }
+}
   
+ 

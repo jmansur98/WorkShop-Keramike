@@ -9,11 +9,17 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: rgba(230, 218, 212, 0.3);
+  height: 150px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(6deg, rgb(255, 255, 255) 48%, rgb(230, 218, 212) 100%);
+}
+header .dropdown {
+  display: none;
 }
 header .logoKeramikeUno {
-  position: relative;
-  right: 420px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
   height: 140px;
 }
 header .contentList {
@@ -32,6 +38,18 @@ header .contentList li a {
   font-size: 20px;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  header .dropdown {
+    display: block;
+  }
+  header .dropdown-toggle::after {
+    display: none;
+  }
+  header .dropdown button {
+    border: none;
+    margin-right: 20px;
+  }
+}
 
 .contentImgIconos {
   display: flex;
@@ -49,6 +67,17 @@ header .contentList li a {
   width: 30px;
 }
 
+@media (max-width: 768px) {
+  .logoKeramikeUno {
+    margin-right: 65px;
+  }
+  .contentListDeso {
+    display: none;
+  }
+  .contentImgIconos {
+    display: none;
+  }
+}
 .contentInicio {
   transition: transform 0.5s ease-in-out;
 }
@@ -83,6 +112,7 @@ main h1 {
   letter-spacing: 4.4px;
   word-spacing: 1.2px;
   color: #000000;
+  background: radial-gradient(circle, rgb(194, 180, 180) 0%, rgb(255, 255, 255) 64%);
   font-weight: 700;
   text-decoration: none;
   margin-top: 10px;
@@ -137,14 +167,23 @@ main .carousel-inner {
     transform: translateX(0);
   }
 }
+@media (max-width: 768px) {
+  .textContainerTres {
+    margin: 10px auto;
+  }
+  .content__total {
+    margin-right: 0px;
+  }
+}
 /* Estilos de la sección "Taller" */
 .textContainerUno {
-  width: 500px;
-  margin-bottom: 120px;
-  margin-top: 20px;
-  text-align: center;
+  margin: auto;
+  margin-bottom: 130px;
+  margin-top: 70px;
+  width: 700px;
   border: 3px solid #3380aa;
   border-radius: 15px;
+  padding: 30px;
 }
 
 .tittleTaller {
@@ -152,34 +191,45 @@ main .carousel-inner {
 }
 
 .imgTaller {
-  width: 600px;
+  width: 30%;
   margin-top: 10px;
+  margin-left: 50%;
+  margin-bottom: 50px;
   border-radius: 15px;
 }
 
-/* Estilos para el contenedor principal */
+@media (max-width: 768px) {
+  .textContainerUno {
+    margin-top: 100px;
+    margin-left: 35px;
+    width: 700px;
+  }
+}
+/* Estilos para el contenedor "NOVEDADES" */
 .contentLeft {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   margin-top: 40px;
-  text-align: center;
 }
 .contentLeft .textContainerDos {
-  flex: 2;
   border: 3px solid #3380aa;
   border-radius: 15px;
+  width: 700px;
+  padding: 30px;
+  margin: auto;
 }
 .contentLeft .textContainerTres {
-  flex: 2;
-  margin-top: 220px;
-  margin-right: 160px;
   border: 3px solid #3380aa;
   border-radius: 15px;
+  width: 500px;
+  padding: 30px;
+  margin-top: 250px;
+  margin-bottom: 100px;
+  margin-left: 750px;
 }
-.contentLeft .imgPincel {
+
+.imgPincel {
   width: 600px;
-  margin-top: 10px;
+  margin-top: -30%;
+  margin-right: 52%;
   border-radius: 15px;
 }
 
@@ -191,69 +241,66 @@ main .carousel-inner {
   margin-top: 25px;
 }
 
-/* Estilos de secciones principales NOSOTROS */
-.content__total {
-  padding: 20px;
-  margin-right: 600px;
-}
-.content__total .contentTittleNos {
+.contentTittleNos {
   margin-left: 45px;
   margin-bottom: 15px;
+  background: radial-gradient(circle, rgb(194, 180, 180) 0%, rgb(255, 255, 255) 64%);
 }
-.content__total .contentFotoNosotros {
+
+.contentFotoNosotros {
   border-radius: 10px;
 }
-.content__total .contentTextNosotros {
+
+.contentTextNosotros {
   width: 300px;
-  border: 3px solid #3380aa;
-  border-radius: 15px;
-  padding: 30px;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(65, 115, 142) 0%, rgb(255, 255, 255) 70%);
   margin-top: 50px;
   margin-bottom: 20px;
 }
-.content__total .contentFotoFrasco {
-  position: relative;
-  margin-left: 800px;
-}
-.content__total .contentFotoFrasco img {
-  height: 550px;
-  width: 500px;
+
+.manosytorno {
+  height: 600px;
+  width: 600px;
+  border-radius: 15px;
 }
 
 /* Estilos de secciones principales CONTACTO */
 .contentPartUno__contacto {
   text-align: center;
-  padding: 20px;
-  background-color: rgba(196, 145, 146, 0.5);
+  padding: 40px;
+  width: 40%;
+  margin: auto;
 }
 .contentPartUno__contacto .titulo__contactoUno {
   font-size: 24px;
-  color: #030303;
+  color: rgb(10, 10, 10);
   margin-top: 20px;
   margin-bottom: 30px;
+  background: rgb(194, 180, 180);
+  background: radial-gradient(circle, rgb(194, 180, 180) 0%, rgb(255, 255, 255) 64%);
+  margin-top: 30px;
 }
 .contentPartUno__contacto .textUno__contacto {
   font-size: 16px;
-  color: #0e0d0d;
+  color: rgb(10, 10, 10);
 }
 
 .ubicacionTituloDos__contacto {
   padding: 10px;
-  background-color: #c2b4b4;
-  margin-top: 20px;
+  background: rgb(194, 180, 180);
+  background: radial-gradient(circle, rgb(194, 180, 180) 0%, rgb(255, 255, 255) 64%);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
 }
 
-.content_horario_direccion {
-  margin-left: 500px;
-  margin-bottom: 20px;
+.contentHorario {
+  height: 150px;
 }
-.content_horario_direccion .contentHorario {
-  border-radius: 10px;
-  width: 320px;
-}
-.content_horario_direccion .contentDireccion {
-  border-radius: 10px;
-  width: 320px;
+
+.contentDireccion {
+  height: 150px;
 }
 
 .contentForm {
@@ -276,56 +323,11 @@ main .carousel-inner {
   gap: 10px;
 }
 
-.dropdown {
-  display: none;
-}
-
 @media (max-width: 768px) {
-  header {
-    justify-content: flex-end;
-  }
-  .logoKeramikeUno {
-    margin-right: 65px;
-  }
-  .contentListDeso {
-    display: none;
-  }
-  .contentImgIconos {
-    display: none;
-  }
-  .dropdown {
-    display: block;
-    margin-right: 10px;
-  }
-  .dropdown button {
-    background-color: transparent;
-    color: #000000;
-    border: none;
-    width: 50px;
-  }
-  .dropdown-toggle::after {
-    display: none;
-  }
-  .dropdown-menu {
-    display: none;
+  .content_horario_direccion {
+    margin: auto;
   }
 }
-.textContainerTres {
-  margin: 10px auto;
-}
-
-.content__total {
-  margin-right: 0px;
-}
-
-.contentPartUno__contacto {
-  background-color: rgba(196, 145, 146, 0.3);
-}
-
-.content_horario_direccion {
-  margin-left: 230px;
-}
-
 
 
 /*# sourceMappingURL=style.css.map */

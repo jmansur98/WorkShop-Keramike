@@ -13,3 +13,15 @@
   .ig {
     width: 30px;
   }
+
+  @media (max-width: 768px) {
+    .logoKeramikeUno{
+    margin-right: 65px;
+    }
+    .contentListDeso {
+      display: none;
+    } 
+    .contentImgIconos {
+      display: none;
+    }
+  }

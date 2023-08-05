@@ -1,0 +1,29 @@
+.contentForm {
+    display: grid;
+    width: 300px;
+    margin: auto;
+    gap: 30px;
+  
+    .contentMasInfo {
+      text-align: center;
+    }
+  
+    .contentGoogleMaps {
+      margin-top: 15px;
+      margin-left: 380px;
+      margin-right: 10px;
+      height: 400px;
+    }
+  
+    .contentTerminos {
+      display: flex;
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+
+    .content_horario_direccion{
+      margin: auto;
+    }
+  }

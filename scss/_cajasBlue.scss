@@ -42,3 +42,13 @@
     transform: translateX(0);
   }
 }
+
+@media (max-width: 768px) {
+
+  .textContainerTres {
+    margin: 10px auto;
+  }
+  .content__total{
+    margin-right: 0px;
+  }
+}
