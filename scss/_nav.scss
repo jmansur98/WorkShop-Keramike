@@ -3,9 +3,8 @@ header {
   justify-content: flex-end;
   align-items: center;
   height: 150px;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(6deg, rgba(255, 255, 255, 1) 48%, rgba(230, 218, 212, 1) 100%);
-
+  background:$bg
+}
 .dropdown{
   display: none;
 }
@@ -49,6 +48,6 @@ header {
       margin-right: 20px;
     }  
   }
-}
+
   
  

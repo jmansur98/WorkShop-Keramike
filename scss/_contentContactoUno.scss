@@ -3,16 +3,14 @@
 .contentPartUno__contacto {
     text-align: center;
     padding: 40px;
-    width: 40%;
     margin: auto;
   
     .titulo__contactoUno {
-      font-size: 24px;
+      font-size: 30px;
       color: rgb(10, 10, 10);
       margin-top: 20px;
       margin-bottom: 30px;
-      background: rgb(194,180,180);
-      background: radial-gradient(circle, rgba(194,180,180,1) 0%, rgba(255,255,255,1) 64%);    margin-top: 30px;
+      @extend %brushstroke 
     }
   
     .textUno__contacto {
@@ -21,9 +19,7 @@
     }
   }
   .ubicacionTituloDos__contacto {
+    margin-bottom: 40px;
     padding: 10px;
-    background: rgb(194,180,180);
-    background: radial-gradient(circle, rgba(194,180,180,1) 0%, rgba(255,255,255,1) 64%);    margin-top: 30px;
-    margin-bottom: 30px;
-    justify-content:center;
+    @extend %brushstroke 
   }

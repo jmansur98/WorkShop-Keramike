@@ -5,52 +5,59 @@
   padding: 0;
 }
 
+.ubicacionTituloDos__contacto, .contentPartUno__contacto .titulo__contactoUno, .contentTittleNos, main h1 {
+  background: rgb(194, 180, 180);
+  background: radial-gradient(circle, rgb(194, 180, 180) 0%, rgb(255, 255, 255) 100%);
+}
+
 header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 150px;
-  background: rgb(255, 255, 255);
   background: linear-gradient(6deg, rgb(255, 255, 255) 48%, rgb(230, 218, 212) 100%);
 }
-header .dropdown {
+
+.dropdown {
   display: none;
 }
-header .logoKeramikeUno {
+
+.logoKeramikeUno {
   position: absolute;
   left: 10px;
   top: 10px;
   height: 140px;
 }
-header .contentList {
+
+.contentList {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 20px;
 }
-header .contentList li {
+.contentList li {
   margin-right: 100px;
   display: inline-block;
 }
-header .contentList li a {
+.contentList li a {
   text-decoration: none;
   color: #0c0b0b;
   font-size: 20px;
   font-weight: bold;
 }
+
 @media (max-width: 768px) {
-  header .dropdown {
+  .dropdown {
     display: block;
   }
-  header .dropdown-toggle::after {
+  .dropdown-toggle::after {
     display: none;
   }
-  header .dropdown button {
+  .dropdown button {
     border: none;
     margin-right: 20px;
   }
 }
-
 .contentImgIconos {
   display: flex;
   align-items: center;
@@ -111,11 +118,10 @@ main h1 {
   font-size: 30px;
   letter-spacing: 4.4px;
   word-spacing: 1.2px;
-  color: #000000;
-  background: radial-gradient(circle, rgb(194, 180, 180) 0%, rgb(255, 255, 255) 64%);
   font-weight: 700;
   text-decoration: none;
   margin-top: 10px;
+  margin: auto;
   text-shadow: -3px 5px 3px rgba(0, 0, 0, 0.2);
 }
 main .carousel-inner {
@@ -242,9 +248,8 @@ main .carousel-inner {
 }
 
 .contentTittleNos {
-  margin-left: 45px;
+  margin: auto;
   margin-bottom: 15px;
-  background: radial-gradient(circle, rgb(194, 180, 180) 0%, rgb(255, 255, 255) 64%);
 }
 
 .contentFotoNosotros {
@@ -252,14 +257,17 @@ main .carousel-inner {
 }
 
 .contentTextNosotros {
-  width: 300px;
-  background: rgb(255, 255, 255);
-  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(65, 115, 142) 0%, rgb(255, 255, 255) 70%);
-  margin-top: 50px;
+  width: 500px;
+  border: 3px solid #3380aa;
+  border-radius: 15px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .manosytorno {
+  margin: auto;
   height: 600px;
   width: 600px;
   border-radius: 15px;
@@ -269,17 +277,13 @@ main .carousel-inner {
 .contentPartUno__contacto {
   text-align: center;
   padding: 40px;
-  width: 40%;
   margin: auto;
 }
 .contentPartUno__contacto .titulo__contactoUno {
-  font-size: 24px;
+  font-size: 30px;
   color: rgb(10, 10, 10);
   margin-top: 20px;
   margin-bottom: 30px;
-  background: rgb(194, 180, 180);
-  background: radial-gradient(circle, rgb(194, 180, 180) 0%, rgb(255, 255, 255) 64%);
-  margin-top: 30px;
 }
 .contentPartUno__contacto .textUno__contacto {
   font-size: 16px;
@@ -287,12 +291,8 @@ main .carousel-inner {
 }
 
 .ubicacionTituloDos__contacto {
+  margin-bottom: 40px;
   padding: 10px;
-  background: rgb(194, 180, 180);
-  background: radial-gradient(circle, rgb(194, 180, 180) 0%, rgb(255, 255, 255) 64%);
-  margin-top: 30px;
-  margin-bottom: 30px;
-  justify-content: center;
 }
 
 .contentHorario {
