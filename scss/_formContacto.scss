@@ -3,6 +3,9 @@
     width: 300px;
     margin: auto;
     gap: 30px;
+    .button__enviar{
+      @include botton
+    }
   
     .contentMasInfo {
       text-align: center;
