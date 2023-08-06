@@ -133,6 +133,16 @@ main .carousel-inner {
   transition-duration: 3s;
 }
 
+@media (max-width: 390px) {
+  .carousel-control-prev-icon {
+    margin-bottom: 200px;
+  }
+  .carousel-control-next-icon {
+    margin-bottom: 200px;
+    background-color: transparent;
+    color: #000000;
+  }
+}
 .contentTodo {
   display: flex;
   justify-content: space-between;
@@ -181,6 +191,20 @@ main .carousel-inner {
     margin-right: 0px;
   }
 }
+@media (max-width: 390px) {
+  .contentTodo {
+    margin: auto;
+    width: 360px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+  }
+  .grow1 {
+    flex-grow: 1;
+  }
+}
 /* Estilos de la sección "Taller" */
 .textContainerUno {
   margin: auto;
@@ -211,18 +235,26 @@ main .carousel-inner {
     width: 700px;
   }
 }
-/* Estilos para el contenedor "NOVEDADES" */
-.contentLeft {
-  margin-top: 40px;
+@media (max-width: 390px) {
+  .textContainerUno {
+    width: 300px;
+    margin-left: 45px;
+    margin-top: 200px;
+  }
+  .imgTaller {
+    width: 350px;
+    margin: auto;
+  }
 }
-.contentLeft .textContainerDos {
+.textContainerDos {
   border: 3px solid #3380aa;
   border-radius: 15px;
-  width: 700px;
   padding: 30px;
   margin: auto;
+  width: 700px;
 }
-.contentLeft .textContainerTres {
+
+.textContainerTres {
   border: 3px solid #3380aa;
   border-radius: 15px;
   width: 500px;
@@ -239,6 +271,23 @@ main .carousel-inner {
   border-radius: 15px;
 }
 
+@media (max-width: 390px) {
+  .textContainerDos {
+    margin-top: 40px;
+    width: 350px;
+    padding: 30px;
+  }
+  .textContainerTres {
+    margin: auto;
+    margin-top: 20px;
+    width: 350px;
+  }
+  .imgPincel {
+    margin: auto;
+    margin-top: 40px;
+    width: 380px;
+  }
+}
 /* Estilos de texto de pie de página */
 .contentEnd {
   text-align: center;

@@ -1,13 +1,10 @@
-/* Estilos para el contenedor "NOVEDADES" */
-.contentLeft {
-    margin-top: 40px;
-  
+
     .textContainerDos {
       border: 3px solid #3380aa;
       border-radius: 15px;
-      width: 700px;
       padding: 30px;
       margin: auto;
+      width: 700px;
     }
   
     .textContainerTres {
@@ -19,10 +16,31 @@
       margin-bottom: 100px;
       margin-left: 800px;
     }
-  }
+  
   .imgPincel {
     width: 600px;
     margin-top: -30%;
     margin-right: 52%;
     border-radius: 15px; 
   }
+  @media (max-width: 390px) {
+  .textContainerDos {
+    margin-top: 40px;
+    width: 350px;
+    padding: 30px;
+  }
+  .textContainerTres{
+    margin:auto;
+    margin-top: 20px;
+    width: 350px;
+  }
+  .imgPincel{
+    margin: auto;
+    margin-top: 40px;
+    width: 380px;
+  }
+  }
+  
+  
+    
+  

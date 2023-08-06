@@ -24,3 +24,13 @@ main {
       transition-duration: 3s;
     }
 }
+@media(max-width: 390px){
+  .carousel-control-prev-icon{
+  margin-bottom: 200px;
+}
+.carousel-control-next-icon{
+  margin-bottom: 200px;
+  background-color: transparent;
+  color: #000000;
+}
+}

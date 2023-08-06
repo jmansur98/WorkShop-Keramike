@@ -52,3 +52,17 @@
     margin-right: 0px;
   }
 }
+@media(max-width: 390px){
+.contentTodo {
+  margin: auto;
+  width: 360px;
+  height: 800px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  justify-content: center;
+}
+.grow1 { flex-grow: 1; }
+}
