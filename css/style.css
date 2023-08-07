@@ -133,7 +133,7 @@ main .carousel-inner {
   transition-duration: 3s;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
   .carousel-control-prev-icon {
     margin-bottom: 200px;
   }
@@ -191,7 +191,7 @@ main .carousel-inner {
     margin-right: 0px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 400px) {
   .contentTodo {
     margin: auto;
     width: 360px;
@@ -235,7 +235,7 @@ main .carousel-inner {
     width: 700px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 400px) {
   .textContainerUno {
     width: 300px;
     margin-left: 45px;
@@ -271,7 +271,7 @@ main .carousel-inner {
   border-radius: 15px;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
   .textContainerDos {
     margin-top: 40px;
     width: 350px;
