@@ -24,3 +24,18 @@ margin-bottom: 15px;
     border-radius: 15px;
     }
   
+    @media(max-width: 400px){
+      .contentFotoNosotros{
+        width: 350px;
+      }
+      .contentTextNosotros{
+        width: 350px;
+      }
+      .manosytorno{
+        width: 350px;
+        height: 350px
+      }
+      .dropdown button{
+        border: none;
+      }
+    }
